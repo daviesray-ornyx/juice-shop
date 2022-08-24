@@ -14,6 +14,18 @@
   <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="http://localhost:8080/dist/accessangel/accessangel.bundle.js"></script>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log(window.AccessAngel);
+      const ace = new AccessAngel({
+        buttonFloatPosition: 'bottom-left',
+        buttonFloatOffset: 60,
+        IDToken: `c27700b0-4ee1-4013-a082-001a1d0bc82f`,
+      });
+    });
+    //}
+  </script>
   <script>
     window.addEventListener("load", function(){
       window.cookieconsent.initialise({
